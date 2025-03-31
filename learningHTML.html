@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #fef3c7; /* pastel yellow */
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-align: center;
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #4b0082; /* deep purple */
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: #006400;
+        margin-top: 30px;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        display: block;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #333;
+        margin: 20px 0;
+      }
+
+      ul,
+      ol {
+        text-align: left;
+        display: inline-block;
+        list-style-position: inside;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+      }
+
+      button {
+        background-color: #ff69b4;
+        color: white;
+        padding: 12px 24px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      button:hover {
+        background-color: #ff1493;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello! I'm Super Coder Kid 🧠</h1>
+
+    <img
+      src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairCurvy&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue03&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Brown"
+      alt="My Avatar"
+    />
+
+    <p>
+      I’m 5 years old and I already know how to build websites! I love cartoons,
+      cookies, and coding cool stuff.
+    </p>
+
+    <h2>My Favorite Things</h2>
+    <ul>
+      <li>Drawing 🌈</li>
+      <li>Robots 🤖</li>
+      <li>Space 🚀</li>
+      <li>Ice cream 🍦</li>
+    </ul>
+
+    <h2>My Superpowers</h2>
+    <ol>
+      <li>Typing fast like lightning ⚡</li>
+      <li>Fixing bugs with my brain 🐞</li>
+      <li>Imagining anything 🔮</li>
+    </ol>
+
+    <button onclick="revealMessage()">
+      Click me! (Soon I’ll do something)
+    </button>
+
+    <p
+      id="secretMessage"
+      style="display: none; margin-top: 20px; font-size: 1.2rem"
+    >
+      🎉 Surprise! You just ran your first JavaScript function!
+    </p>
+    <script>
+      function revealMessage() {
+        const secret = document.getElementById("secretMessage");
+        secret.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
